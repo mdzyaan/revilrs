@@ -16,7 +16,7 @@ body {
   background-color: #000;
   color: #fff; }
 
-nav {
+.nav {
   display: flex;
   justify-content: space-between; }
 
@@ -109,16 +109,22 @@ nav {
       background-position: 50% 50%;
       background-repeat: no-repeat;
       background-size: cover; }
-    .cards__post-card--icon {
+    .cards__post-card--icon-1 {
       position: absolute;
-      top: 1rem;
-      right: 1rem;
-      height: 3.75rem;
-      width: 3.75rem; }
-      .cards__post-card--icon-1 {
-        fill: #2F80ED; }
-        .cards__post-card--icon-1:hover {
-          fill: rgba(30, 131, 226, 0.5); }
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: none;
+      background-color: transparent; }
+      .cards__post-card--icon-11 {
+        font-size: 10rem;
+        opacity: 0;
+        color: #f7f7f7;
+        transition: all .2s;
+        z-index: 1; }
+        .cards__post-card--icon-11:hover {
+          color: rgba(30, 131, 226, 0.5);
+          outline: none; }
     .cards__post-card--bg {
       position: absolute;
       top: 0;
@@ -126,10 +132,13 @@ nav {
       width: 100%;
       height: 100%;
       background: rgba(0, 0, 0, 0);
-      transition: background 0.5s ease; }
+      transition: background 0.5s ease;
+      z-index: 0; }
     .cards__post-card:hover .cards__post-card--bg {
       display: block;
       background: rgba(0, 0, 0, 0.3); }
+    .cards__post-card:hover .cards__post-card--icon-11 {
+      opacity: 1; }
 
 .btn, .btn:link, .btn:visited {
   text-decoration: none;
