@@ -74,6 +74,7 @@ nav {
   .cards__post {
     margin-right: 1rem; }
     .cards__post img {
+      border-radius: 0.5rem;
       position: relative;
       float: left;
       width: 22rem;
