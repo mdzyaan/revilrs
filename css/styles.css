@@ -26,7 +26,7 @@ body {
   .nav__search {
     margin: .8rem 0; }
     .nav__search-icon {
-      color: #1e83e2; }
+      color: #fff; }
 
 .sidenav {
   height: 100%;
@@ -35,10 +35,18 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111111;
+  background-color: #000;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 6rem; }
+  .sidenav a:hover {
+    color: rgba(30, 131, 226, 0.8); }
+  .sidenav__line {
+    margin: 1rem auto;
+    width: 25%;
+    height: 2px;
+    display: block;
+    background-color: #1e83e2; }
   .sidenav::-webkit-scrollbar {
     width: 0.5rem;
     border-radius: 50%; }
@@ -54,26 +62,42 @@ body {
     font-size: 36px;
     margin-left: 50px; }
   .sidenav__menu {
-    padding: .8rem .8rem .8rem 3.2rem;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 .8rem 0 3.2rem;
     list-style: none;
     font-size: 1.6rem; }
     .sidenav__menu-item {
       font-weight: bold;
-      margin-bottom: 1rem; }
+      margin-bottom: 1rem;
+      padding: 8px 8px 8px 16px; }
+  .sidenav__quick {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 0.8rem 0 3.2rem;
+    list-style: none;
+    font-size: 1.6rem; }
+    .sidenav__quick-title {
+      color: #1e83e2;
+      font-size: 2rem; }
+    .sidenav__quick-item {
+      padding: .5rem .5rem .5rem 1.6rem; }
   .sidenav__genre {
-    padding: .8rem .8rem .8rem 3.2rem;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 0.8rem 0 3.2rem;
     list-style: none; }
     .sidenav__genre-title {
-      color: #1e83e2; }
+      color: #1e83e2;
+      font-size: 2rem; }
+    .sidenav__genre-item {
+      padding: .5rem .5rem .5rem 1.6rem; }
   .sidenav a {
-    padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 1.6rem;
-    color: #fff;
+    color: white;
     display: block;
     transition: 0.3s; }
-  .sidenav a:hover {
-    color: #f1f1f1; }
 
 @media screen and (max-height: 450px) {
   .sidenav {
