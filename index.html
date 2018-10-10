@@ -14,27 +14,41 @@
   <body>
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Clients</a>
-      <a href="#">Contact</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Clients</a>
-      <a href="#">Contact</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Clients</a>
-      <a href="#">Contact</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Clients</a>
-      <a href="#">Contact</a>
+      <ul class="sidenav__menu">
+        <li class="sidenav__menu-item">Recently Watched</li>
+        <li class="sidenav__menu-item">Favorites</li>
+        <li class="sidenav__menu-item">Log out</li>
+      </ul>
+      <ul class="sidenav__genre">
+        <h3 class="sidenav__genre-title">Genre</h3>
+        <li><a>Adventure</a></li>
+        <li><a>Action</a></li>
+        <li><a href="#4">Fighting</a></li>
+        <li><a href="#25">Hack and slash</a></li>
+        <li><a href="#32">Indie</a></li>
+        <li><a href="#7">Music</a></li>
+        <li><a href="#30">Pinball</a></li>
+        <li><a href="#8">Platform</a></li>
+        <li><a href="#2">Point-and-click</a></li>
+        <li><a href="#9">Puzzle</a></li>
+        <li><a href="#26">Quiz/Trivia</a></li>
+        <li><a href="#10">Racing</a></li>
+        <li><a href="#11">Real Time Strategy (RTS)</a></li>
+        <li><a href="#12">Role-playing (RPG)</a></li>
+        <li><a href="#5">Shooter</a></li>
+        <li><a href="#13">Simulator</a></li>
+        <li><a href="#14">Sport</a></li>
+        <li><a href="#15">Strategy</a></li>
+        <li><a href="#24">Tactical</a></li>
+        <li><a href="#16">Turn-based strategy (TBS)</a></li>
+      </ul>
     </div>
     <nav class="nav">
       <div class="nav__hamburger" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776</div>
       <div class="nav__logo">revilr</div>
-      <div class="nav__login">sign in</div>
+      <div class="nav__search">
+        <i class="nav__search-icon fas fa-search"></i>
+      </div>
     </nav>
     <section class="cards">
       <div class="cards__title">
@@ -46,67 +60,200 @@
         <!-- //images.igdb.com/igdb/image/upload/t_cover_big/lcy8csmxbak1hnx9kwqg.jpg -->
         <div class="cards__post-card">
           <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/lvoic2oakbklg2dytgpa.jpg"/>
-          <button class="cards__post-card--icon-1">
-              <i class="cards__post-card--icon-11 far fa-play-circle"></i>
-          </button>
           <div class="cards__post-card--bg"></div>
+          <a class="cards__post-card--icon-1" href="#">
+              <i class="cards__post-card--icon-11 far fa-play-circle"></i>
+          </a>
+          <button class="cards__post-card--icon-2" href="#">
+              <i class="cards__post-card--icon-22 fas fa-plus"></i>
+          </button>
+          <span class="cards__post-card--icon-3">
+            99<i class="cards__post-card--icon-33 fas fa-heartbeat fa-fw"></i>
+          </span>
         </div>
         <div class="cards__post-card">
           <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/vkdea0wwyn0zx8fjs1kt.jpg"/>
-          <button class="cards__post-card--icon-1">
-              <i class="cards__post-card--icon-11 far fa-play-circle"></i>
-          </button>
           <div class="cards__post-card--bg"></div>
+          <a class="cards__post-card--icon-1" href="#">
+              <i class="cards__post-card--icon-11 far fa-play-circle"></i>
+          </a>
+          <button class="cards__post-card--icon-2" href="#">
+              <i class="cards__post-card--icon-22 fas fa-plus"></i>
+          </button>
+          <span class="cards__post-card--icon-3">
+            87<i class="cards__post-card--icon-33 fas fa-heartbeat fa-fw"></i>
+          </span>
         </div>
         <div class="cards__post-card">
           <img src="//images.igdb.com/igdb/image/upload/t_cover_big/lcy8csmxbak1hnx9kwqg.jpg"/>
-          <button class="cards__post-card--icon-1">
-              <i class="cards__post-card--icon-11 far fa-play-circle"></i>
-          </button>
           <div class="cards__post-card--bg"></div>
+          <a class="cards__post-card--icon-1" href="#">
+              <i class="cards__post-card--icon-11 far fa-play-circle"></i>
+          </a>
+          <button class="cards__post-card--icon-2" href="#">
+              <i class="cards__post-card--icon-22 fas fa-plus"></i>
+          </button>
+          <span class="cards__post-card--icon-3">
+            71<i class="cards__post-card--icon-33 fas fa-heartbeat fa-fw"></i>
+          </span>
         </div>
         <div class="cards__post-card">
           <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/lvoic2oakbklg2dytgpa.jpg"/>
-          <button class="cards__post-card--icon-1">
-              <i class="cards__post-card--icon-11 far fa-play-circle"></i>
-          </button>
           <div class="cards__post-card--bg"></div>
+          <a class="cards__post-card--icon-1" href="#">
+              <i class="cards__post-card--icon-11 far fa-play-circle"></i>
+          </a>
+          <button class="cards__post-card--icon-2" href="#">
+              <i class="cards__post-card--icon-22 fas fa-plus"></i>
+          </button>
+          <span class="cards__post-card--icon-3">
+            91<i class="cards__post-card--icon-33 fas fa-heartbeat fa-fw"></i>
+          </span>
         </div>
         <div class="cards__post-card">
           <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/vkdea0wwyn0zx8fjs1kt.jpg"/>
-          <button class="cards__post-card--icon-1">
-              <i class="cards__post-card--icon-11 far fa-play-circle"></i>
-          </button>
           <div class="cards__post-card--bg"></div>
+          <a class="cards__post-card--icon-1" href="#">
+              <i class="cards__post-card--icon-11 far fa-play-circle"></i>
+          </a>
+          <button class="cards__post-card--icon-2" href="#">
+              <i class="cards__post-card--icon-22 fas fa-plus"></i>
+          </button>
+          <span class="cards__post-card--icon-3">
+            63<i class="cards__post-card--icon-33 fas fa-heartbeat fa-fw"></i>
+          </span>
         </div>
         <div class="cards__post-card">
           <img src="//images.igdb.com/igdb/image/upload/t_cover_big/lcy8csmxbak1hnx9kwqg.jpg"/>
-          <button class="cards__post-card--icon-1">
-              <i class="cards__post-card--icon-11 far fa-play-circle"></i>
-          </button>
           <div class="cards__post-card--bg"></div>
+          <a class="cards__post-card--icon-1" href="#">
+              <i class="cards__post-card--icon-11 far fa-play-circle"></i>
+          </a>
+          <button class="cards__post-card--icon-2" href="#">
+              <i class="cards__post-card--icon-22 fas fa-plus"></i>
+          </button>
+          <span class="cards__post-card--icon-3">
+            99<i class="cards__post-card--icon-33 fas fa-heartbeat fa-fw"></i>
+          </span>
         </div>
         <div class="cards__post-card">
           <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/lvoic2oakbklg2dytgpa.jpg"/>
-          <button class="cards__post-card--icon-1">
-              <i class="cards__post-card--icon-11 far fa-play-circle"></i>
-          </button>
           <div class="cards__post-card--bg"></div>
+          <a class="cards__post-card--icon-1" href="#">
+              <i class="cards__post-card--icon-11 far fa-play-circle"></i>
+          </a>
+          <button class="cards__post-card--icon-2" href="#">
+              <i class="cards__post-card--icon-22 fas fa-plus"></i>
+          </button>
+          <span class="cards__post-card--icon-3">
+            45<i class="cards__post-card--icon-33 fas fa-heartbeat fa-fw"></i>
+          </span>
         </div>
         <div class="cards__post-card">
           <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/vkdea0wwyn0zx8fjs1kt.jpg"/>
-          <button class="cards__post-card--icon-1">
-              <i class="cards__post-card--icon-11 far fa-play-circle"></i>
-          </button>
           <div class="cards__post-card--bg"></div>
+          <a class="cards__post-card--icon-1" href="#">
+              <i class="cards__post-card--icon-11 far fa-play-circle"></i>
+          </a>
+          <button class="cards__post-card--icon-2" href="#">
+              <i class="cards__post-card--icon-22 fas fa-plus"></i>
+          </button>
+          <span class="cards__post-card--icon-3">
+            99<i class="cards__post-card--icon-33 fas fa-heartbeat fa-fw"></i>
+          </span>
         </div>
         <div class="cards__post-card">
           <img src="//images.igdb.com/igdb/image/upload/t_cover_big/lcy8csmxbak1hnx9kwqg.jpg"/>
-          <button class="cards__post-card--icon-1">
-              <i class="cards__post-card--icon-11 far fa-play-circle"></i>
-          </button>
           <div class="cards__post-card--bg"></div>
+          <a class="cards__post-card--icon-1" href="#">
+              <i class="cards__post-card--icon-11 far fa-play-circle"></i>
+          </a>
+          <button class="cards__post-card--icon-2" href="#">
+              <i class="cards__post-card--icon-22 fas fa-plus"></i>
+          </button>
+          <span class="cards__post-card--icon-3">
+            72<i class="cards__post-card--icon-33 fas fa-heartbeat fa-fw"></i>
+          </span>
         </div>
+        <div class="cards__post-card">
+          <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/lvoic2oakbklg2dytgpa.jpg"/>
+          <div class="cards__post-card--bg"></div>
+          <a class="cards__post-card--icon-1" href="#">
+              <i class="cards__post-card--icon-11 far fa-play-circle"></i>
+          </a>
+          <button class="cards__post-card--icon-2" href="#">
+              <i class="cards__post-card--icon-22 fas fa-plus"></i>
+          </button>
+          <span class="cards__post-card--icon-3">
+            99<i class="cards__post-card--icon-33 fas fa-heartbeat fa-fw"></i>
+          </span>
+        </div>
+        <div class="cards__post-card">
+          <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/vkdea0wwyn0zx8fjs1kt.jpg"/>
+          <div class="cards__post-card--bg"></div>
+          <a class="cards__post-card--icon-1" href="#">
+              <i class="cards__post-card--icon-11 far fa-play-circle"></i>
+          </a>
+          <button class="cards__post-card--icon-2" href="#">
+              <i class="cards__post-card--icon-22 fas fa-plus"></i>
+          </button>
+          <span class="cards__post-card--icon-3">
+            99<i class="cards__post-card--icon-33 fas fa-heartbeat fa-fw"></i>
+          </span>
+        </div>
+        <div class="cards__post-card">
+          <img src="//images.igdb.com/igdb/image/upload/t_cover_big/lcy8csmxbak1hnx9kwqg.jpg"/>
+          <div class="cards__post-card--bg"></div>
+          <a class="cards__post-card--icon-1" href="#">
+              <i class="cards__post-card--icon-11 far fa-play-circle"></i>
+          </a>
+          <button class="cards__post-card--icon-2" href="#">
+              <i class="cards__post-card--icon-22 fas fa-plus"></i>
+          </button>
+          <span class="cards__post-card--icon-3">
+            99<i class="cards__post-card--icon-33 fas fa-heartbeat fa-fw"></i>
+          </span>
+        </div>
+        <div class="cards__post-card">
+          <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/lvoic2oakbklg2dytgpa.jpg"/>
+          <div class="cards__post-card--bg"></div>
+          <a class="cards__post-card--icon-1" href="#">
+              <i class="cards__post-card--icon-11 far fa-play-circle"></i>
+          </a>
+          <button class="cards__post-card--icon-2" href="#">
+              <i class="cards__post-card--icon-22 fas fa-plus"></i>
+          </button>
+          <span class="cards__post-card--icon-3">
+            99<i class="cards__post-card--icon-33 fas fa-heartbeat fa-fw"></i>
+          </span>
+        </div>
+        <div class="cards__post-card">
+          <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/vkdea0wwyn0zx8fjs1kt.jpg"/>
+          <div class="cards__post-card--bg"></div>
+          <a class="cards__post-card--icon-1" href="#">
+              <i class="cards__post-card--icon-11 far fa-play-circle"></i>
+          </a>
+          <button class="cards__post-card--icon-2" href="#">
+              <i class="cards__post-card--icon-22 fas fa-plus"></i>
+          </button>
+          <span class="cards__post-card--icon-3">
+            99<i class="cards__post-card--icon-33 fas fa-heartbeat fa-fw"></i>
+          </span>
+        </div>
+        <div class="cards__post-card">
+          <img src="//images.igdb.com/igdb/image/upload/t_cover_big/lcy8csmxbak1hnx9kwqg.jpg"/>
+          <div class="cards__post-card--bg"></div>
+          <a class="cards__post-card--icon-1" href="#">
+              <i class="cards__post-card--icon-11 far fa-play-circle"></i>
+          </a>
+          <button class="cards__post-card--icon-2" href="#">
+              <i class="cards__post-card--icon-22 fas fa-plus"></i>
+          </button>
+          <span class="cards__post-card--icon-3">
+            99<i class="cards__post-card--icon-33 fas fa-heartbeat fa-fw"></i>
+          </span>
+        </div>
+      
       </div>
       <div class="cards__button">
         <button class="btn btn--green">ViewAll</button>
