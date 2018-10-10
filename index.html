@@ -3,14 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="000000">
+    <meta name="theme-color" content="#000000">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-
-
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">        
     <title>revilr</title>
-    
   </head>
   <body>
     <div id="mySidenav" class="sidenav">
@@ -51,6 +48,7 @@
         <li class="sidenav__genre-item"><a href="#24">Tactical</a></li>
         <li class="sidenav__genre-item"><a href="#16">Turn-based strategy (TBS)</a></li>
       </ul>
+      <div class="sidenav__line"></div>
     </div>
     <nav class="nav">
       <div class="nav__hamburger" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776</div>
@@ -59,6 +57,15 @@
         <i class="nav__search-icon fas fa-search"></i>
       </div>
     </nav>
+    <section class="header">
+        <video class="header__video" poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline autoplay muted loop>
+          <!-- 
+        - Video needs to be muted, since Chrome 66+ will not autoplay video with sound.
+        WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+        <source src="img/pubg.MP4" type="video/mp4">
+        
+        </video>
+    </section>
     <section class="cards">
       <div class="cards__title">
         <h1 class="cards__title-head">Featured</h1>
@@ -74,7 +81,7 @@
               <i class="cards__post-card--icon-11 far fa-play-circle"></i>
           </a>
           <button class="cards__post-card--icon-2" href="#">
-              <i class="cards__post-card--icon-22 fas fa-plus"></i>
+              <i class="cards__post-card--icon-22 fas fa-plus" title="Add to list"></i>
           </button>
           <span class="cards__post-card--icon-3">
             99<i class="cards__post-card--icon-33 fas fa-heartbeat fa-fw"></i>
@@ -267,11 +274,8 @@
       <div class="cards__button">
         <button class="btn btn--green">ViewAll</button>
       </div>
-        
-      
-      
-
     </section>
+    <footer class="footer">Most of the rights reserved. 2018</footer>
     <script>
       function openNav() {
           document.getElementById("mySidenav").style.width = "250px";

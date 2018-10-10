@@ -37,10 +37,10 @@ body {
   left: 0;
   background-color: #000;
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: all 0.5s;
   padding-top: 6rem; }
   .sidenav a:hover {
-    color: rgba(30, 131, 226, 0.8); }
+    opacity: 1; }
   .sidenav__line {
     margin: 1rem auto;
     width: 25%;
@@ -69,8 +69,12 @@ body {
     font-size: 1.6rem; }
     .sidenav__menu-item {
       font-weight: bold;
+      opacity: .5;
       margin-bottom: 1rem;
-      padding: 8px 8px 8px 16px; }
+      transition: all .3s; }
+      .sidenav__menu-item:hover {
+        opacity: 1;
+        transform: translateX(1rem); }
   .sidenav__quick {
     width: 90%;
     margin: 0 auto;
@@ -78,20 +82,36 @@ body {
     list-style: none;
     font-size: 1.6rem; }
     .sidenav__quick-title {
-      color: #1e83e2;
-      font-size: 2rem; }
+      color: #fff;
+      padding: .5rem;
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      letter-spacing: .3rem; }
     .sidenav__quick-item {
-      padding: .5rem .5rem .5rem 1.6rem; }
+      opacity: .5;
+      padding: .5rem;
+      transition: all .3s; }
+      .sidenav__quick-item:hover {
+        opacity: 1;
+        transform: translateX(1rem); }
   .sidenav__genre {
     width: 90%;
     margin: 0 auto;
     padding: 0 0.8rem 0 3.2rem;
     list-style: none; }
     .sidenav__genre-title {
-      color: #1e83e2;
-      font-size: 2rem; }
+      color: #fff;
+      padding: .5rem;
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      letter-spacing: .3rem; }
     .sidenav__genre-item {
-      padding: .5rem .5rem .5rem 1.6rem; }
+      opacity: .5;
+      padding: .5rem;
+      transition: all .3s; }
+      .sidenav__genre-item:hover {
+        opacity: 1;
+        transform: translateX(1rem); }
   .sidenav a {
     text-decoration: none;
     font-size: 1.6rem;
@@ -171,6 +191,7 @@ body {
       top: 1rem;
       right: 1rem;
       border: none;
+      transition: all .3s;
       background-color: transparent; }
       .cards__post-card--icon-22 {
         font-size: 2rem;
@@ -180,7 +201,7 @@ body {
         z-index: 1; }
         .cards__post-card--icon-22:hover, .cards__post-card--icon-22:focus {
           outline: none;
-          color: rgba(247, 247, 247, 0.5); }
+          transform: rotate(360deg); }
     .cards__post-card--icon-3 {
       position: absolute;
       top: 1rem;
@@ -272,3 +293,30 @@ body {
 .btn-text:active {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   transform: translateY(0); }
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 3rem; }
+  .header__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    opacity: 0.5;
+    transform: translateX(-50%) translateY(-50%);
+    background: url("//demosthenes.info/assets/images/polina.jpg") no-repeat;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s opacity; }
+
+footer {
+  margin-top: 2rem;
+  width: 100%;
+  text-align: center; }
