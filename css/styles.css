@@ -169,9 +169,10 @@ body {
     font-size: 18px; } }
 
 .cardss {
-  width: 100%; }
+  width: 100%;
+  margin: 2rem 0; }
   .cardss__title {
-    width: 15rem;
+    width: 17rem;
     margin: 0 auto;
     margin-bottom: 2rem; }
     .cardss__title-head {
@@ -277,7 +278,7 @@ body {
   height: 31rem;
   background-color: #fff;
   position: relative;
-  margin-right: 2rem;
+  margin: 0 1rem;
   transition: all .2s; }
   .cards:hover {
     transform: scale(1.1); }
