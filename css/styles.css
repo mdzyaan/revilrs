@@ -58,7 +58,8 @@ body {
     justify-content: center;
     flex-direction: column; }
     .nav__search-icon {
-      color: #fff; }
+      color: #fff;
+      font-size: 2rem; }
 
 .sidenav {
   height: 100%;
