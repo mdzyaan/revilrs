@@ -163,8 +163,6 @@ body {
     transition: 0.3s; }
 
 @media screen and (max-height: 450px) {
-  .nav__logo-text {
-    font-size: 2.2rem; }
   .sidenav {
     padding-top: 15px; }
   .sidenav a {
@@ -344,14 +342,24 @@ body {
   width: 100%;
   height: 100vh;
   margin-bottom: 3rem;
-  overflow: hidden; }
-  .header__image {
+  overflow: hidden;
+  background-image: url(../img/pubgCover.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative; }
+  .header__bg {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    background-image: linear-gradient(to bottom, transparent, black 90%);
     width: 100%;
-    height: 100%;
-    background-image: url(./img/uncompressed.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%; }
+    height: 8rem; }
+  .header__content {
+    margin: 0 auto; }
 
 footer {
   margin-top: 2rem;
