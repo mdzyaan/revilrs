@@ -7,6 +7,9 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 459px) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: 'Lato', sans-serif;
@@ -19,7 +22,11 @@ body {
 @keyframes colorChange {
   0% {
     background-position: 0% 50%; }
+  30% {
+    background-position: 100% 50%; }
   50% {
+    background-position: 100% 50%; }
+  70% {
     background-position: 100% 50%; }
   100% {
     background-position: 0% 50%; } }
@@ -34,6 +41,8 @@ body {
   padding: 1rem;
   background-color: transparent; }
   .nav__hamburger {
+    font-size: 30px;
+    cursor: pointer;
     display: flex;
     justify-content: center;
     flex-direction: column; }
@@ -45,7 +54,7 @@ body {
     border-radius: 1rem;
     background: linear-gradient(270deg, #ea5455, #f8d800, #28c76f, #0396ff);
     background-size: 800% 800%;
-    animation: colorChange 30s ease infinite;
+    animation: colorChange 30s linear infinite;
     transform: skewX(-15deg); }
     .nav__logo-text {
       font-family: 'Facon', sans-serif;
@@ -154,6 +163,8 @@ body {
     transition: 0.3s; }
 
 @media screen and (max-height: 450px) {
+  .nav__logo-text {
+    font-size: 2.2rem; }
   .sidenav {
     padding-top: 15px; }
   .sidenav a {
@@ -334,18 +345,13 @@ body {
   height: 100vh;
   margin-bottom: 3rem;
   overflow: hidden; }
-  .header__video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -100;
-    opacity: 1;
-    transform: translateX(-50%) translateY(-50%);
+  .header__image {
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/uncompressed.png);
     background-repeat: no-repeat;
     background-size: cover;
-    transition: 1s opacity; }
+    background-position: 50% 50%; }
 
 footer {
   margin-top: 2rem;

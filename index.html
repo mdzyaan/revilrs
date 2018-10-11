@@ -51,7 +51,7 @@
       <div class="sidenav__line"></div>
     </div>
     <nav class="nav">
-      <div class="nav__hamburger" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776</div>
+      <div class="nav__hamburger" onclick="openNav()">&#9776</div>
       <div class="nav__logo">
         <span class="nav__logo-text">Revilr</span>
       </div>
@@ -60,13 +60,7 @@
       </div>
     </nav>
     <section class="header">
-        <video class="header__video" poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline autoplay muted loop>
-          <!-- 
-        - Video needs to be muted, since Chrome 66+ will not autoplay video with sound.
-        WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
-        <source src="img/pubg.MP4" type="video/mp4">
-        </video>
-        <div class="cards__post-card--bg"></div>
+        <img src="img/uncompressed.png" alt="pubg" class="header__image">
     </section>
     <section class="cards">
       <div class="cards__title">
