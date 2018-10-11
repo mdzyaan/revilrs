@@ -20,13 +20,13 @@ body {
   0% {
     background-position: 0% 50%; }
   50% {
-    background-position: 100% 50%; }
+    background-position: 50% 50%; }
   100% {
-    background-position: 0% 50%; } }
+    background-position: 100% 50%; } }
 
 @font-face {
   font-family: 'Facon';
-  src: url(../../css/font/Facon.ttf); }
+  src: url(./font/Facon.ttf) format("truetype"); }
 
 .nav {
   display: flex;
@@ -41,16 +41,17 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-left: -2rem;
-    padding: 1rem;
-    padding-bottom: 0.5rem;
-    color: #fff;
+    padding: 1rem 2rem 0.6rem;
     border-radius: 1rem;
-    font-family: 'Facon', monospace;
-    font-size: 3.2rem;
     background: linear-gradient(270deg, #ea5455, #f8d800, #28c76f, #0396ff);
     background-size: 800% 800%;
-    animation: colorChange 30s ease infinite; }
+    animation: colorChange 30s ease infinite;
+    transform: skewX(15deg); }
+    .nav__logo-text {
+      font-family: 'Facon', sans-serif;
+      font-size: 3.2rem;
+      color: #fff;
+      transform: skewX(-15deg); }
   .nav__search {
     margin: .8rem 0;
     display: flex;
@@ -77,10 +78,11 @@ body {
     width: 25%;
     height: 2px;
     display: block;
-    background-color: #1e83e2; }
+    background: linear-gradient(270deg, #ea5455, #f8d800, #28c76f, #0396ff);
+    background-size: 800% 800%;
+    animation: colorChange 30s ease infinite; }
   .sidenav::-webkit-scrollbar {
-    width: 0.5rem;
-    border-radius: 50%; }
+    width: 0.5rem; }
   .sidenav::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
   .sidenav::-webkit-scrollbar-thumb {
@@ -338,7 +340,7 @@ body {
     min-width: 100%;
     min-height: 100%;
     z-index: -100;
-    opacity: 0.5;
+    opacity: 1;
     transform: translateX(-50%) translateY(-50%);
     background-repeat: no-repeat;
     background-size: cover;
