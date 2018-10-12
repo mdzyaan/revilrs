@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">        
     <title>revilr</title>
   </head>
@@ -73,12 +74,12 @@
       
     </section>
     
-    <section class="cardss">
+    <section data-aos="fade-in"  data-aos-duration="2000" class="cardss">
       <div class="cardss__title">
         <h1 class="cardss__title-head">Featured</h1>
         <div class="cardss__title-line"></div>
       </div>
-      <div class="cardss__post">
+      <div class="cardss__post"  data-aos="slide-right" data-aos-duration="1500">
         <div class="cardss__post-card cards">
           <img src="//images.igdb.com/igdb/image/upload/t_cover_big/lcy8csmxbak1hnx9kwqg.jpg"/>
           <div class="cards__bg"></div>
@@ -207,12 +208,12 @@
       
     </section> 
     <!-- Top games -->
-    <section class="cardss">
+    <section data-aos="fade-in"  data-aos-duration="2000" class="cardss">
       <div class="cardss__title">
         <h1 class="cardss__title-head">Top Games</h1>
         <div class="cardss__title-line"></div>
       </div>
-      <div class="cardss__post">
+      <div class="cardss__post"   data-aos="slide-left" data-aos-duration="1500">
         <div class="cardss__post-card cards">
           <img src="//images.igdb.com/igdb/image/upload/t_cover_big/lcy8csmxbak1hnx9kwqg.jpg"/>
           <div class="cards__bg"></div>
@@ -343,7 +344,10 @@
     <footer class="footer">&copy; Copyright 2018. Most of the rights reserved.</footer>
 
 
-    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script>
       function openNav() {
           document.getElementById("mySidenav").style.width = "250px";
