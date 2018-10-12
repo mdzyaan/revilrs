@@ -41,6 +41,7 @@ body {
   padding: 1rem;
   z-index: 1000;
   position: fixed;
+  top: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5); }
   .nav__hamburger {
@@ -203,7 +204,6 @@ body {
     .cardss__button-line {
       margin: 0 auto; }
   .cardss__post {
-    padding: 1.6rem 0;
     align-items: stretch;
     display: flex;
     flex-direction: row;
@@ -219,22 +219,16 @@ body {
       outline: 1px solid slategrey; }
     .cardss__post-card {
       flex: 0 0 auto; }
-      .cardss__post-card:hover .cards__post-card--bg {
-        display: block;
-        background: rgba(0, 0, 0, 0.3); }
-      .cardss__post-card:hover .cards__post-card--icon-11 {
-        opacity: 1; }
 
 @media screen and (max-height: 450px) {
   .cardss__title-line {
     width: 20%; } }
 
 .cards {
-  float: left;
   width: 22rem;
   height: 31rem;
   position: relative;
-  margin: 0 1rem;
+  margin: 1.6rem 1rem;
   transition: all .2s; }
   .cards:hover {
     transform: scale(1.1); }
@@ -371,6 +365,13 @@ body {
     padding-top: 15px; }
     .sidenav a {
       font-size: 18px; } }
+
+.search__container {
+  padding-top: 10rem;
+  align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
 
 footer {
   margin: 3rem 0;
