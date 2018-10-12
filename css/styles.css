@@ -165,23 +165,24 @@ body {
 @media screen and (max-height: 450px) {
   .sidenav {
     padding-top: 15px; }
-  .sidenav a {
-    font-size: 18px; } }
+    .sidenav a {
+      font-size: 18px; } }
 
 .cardss {
   width: 100%;
-  margin: 2rem 0; }
+  margin: 10rem 0; }
   .cardss__title {
-    width: 17rem;
     margin: 0 auto;
     margin-bottom: 2rem; }
     .cardss__title-head {
+      text-align: center;
       letter-spacing: .5rem;
       margin-bottom: 1rem; }
     .cardss__title-line {
+      margin: 0 auto;
       display: block;
-      width: 80%;
-      height: .3rem;
+      width: 8%;
+      height: .4rem;
       border-radius: .2rem;
       background: linear-gradient(270deg, #ea5455, #f8d800, #28c76f, #0396ff);
       background-size: 800% 800%;
@@ -213,70 +214,20 @@ body {
       outline: 1px solid slategrey; }
     .cardss__post-card {
       flex: 0 0 auto; }
-      .cardss__post-card--icon-1 {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border: none;
-        background-color: transparent; }
-        .cardss__post-card--icon-11 {
-          font-size: 10rem;
-          opacity: 0.5;
-          color: #f7f7f7;
-          transition: all .2s;
-          z-index: 1; }
-          .cardss__post-card--icon-11:hover {
-            color: rgba(247, 247, 247, 0.5);
-            outline: none; }
-      .cardss__post-card--icon-2 {
-        position: absolute;
-        top: 1rem;
-        right: 1rem;
-        border: none;
-        transition: all .3s;
-        background-color: transparent; }
-        .cardss__post-card--icon-22 {
-          font-size: 2rem;
-          opacity: 1;
-          color: #f7f7f7;
-          transition: all .2s;
-          z-index: 1; }
-          .cardss__post-card--icon-22:hover, .cardss__post-card--icon-22:focus {
-            outline: none;
-            transform: rotate(360deg); }
-      .cardss__post-card--icon-3 {
-        position: absolute;
-        top: 1rem;
-        left: 1rem;
-        border: none;
-        background-color: transparent; }
-        .cardss__post-card--icon-33 {
-          font-size: 1.5rem;
-          opacity: 1;
-          color: #f7f7f7;
-          transition: all .2s;
-          z-index: 1; }
-      .cardss__post-card--bg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0);
-        transition: background 0.5s ease;
-        z-index: 0; }
       .cardss__post-card:hover .cards__post-card--bg {
         display: block;
         background: rgba(0, 0, 0, 0.3); }
       .cardss__post-card:hover .cards__post-card--icon-11 {
         opacity: 1; }
 
+@media screen and (max-height: 450px) {
+  .cardss__title-line {
+    width: 20%; } }
+
 .cards {
   float: left;
   width: 22rem;
   height: 31rem;
-  background-color: #fff;
   position: relative;
   margin: 0 1rem;
   transition: all .2s; }
@@ -314,26 +265,29 @@ body {
       z-index: 1; }
   .cards__icon-2 {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: 0;
+    right: 0;
     border: none;
+    padding: 1rem;
     transition: all .3s;
     background-color: transparent; }
+    .cards__icon-2:hover, .cards__icon-2:active {
+      outline: none;
+      transform: rotate(360deg); }
     .cards__icon-22 {
       font-size: 2rem;
       opacity: 1;
       color: #eee;
       transition: all .2s;
       z-index: 1; }
-      .cards__icon-22:hover {
-        outline: none;
-        transform: rotate(360deg); }
+      .cards__icon-22:hover, .cards__icon-22:active {
+        outline: none; }
   .cards__icon-3 {
     position: absolute;
-    top: 1rem;
-    left: 1rem;
+    top: 0;
+    left: 0;
     border: none;
-    background-color: transparent; }
+    padding: 1rem; }
     .cards__icon-33 {
       font-size: 1.5rem;
       opacity: 1;
@@ -358,7 +312,7 @@ body {
 .button__wrapper-line {
   width: 11rem;
   border-radius: 2px;
-  height: 4px;
+  height: .4rem;
   background: linear-gradient(270deg, #ea5455, #f8d800, #28c76f, #0396ff);
   background-size: 800% 800%;
   animation: colorChange 30s linear infinite;
