@@ -9,7 +9,7 @@ html {
   font-size: 62.5%; }
   @media (max-width: 500px) {
     html {
-      font-size: 50%; } }
+      font-size: 30%; } }
   @media (max-height: 450px) {
     html {
       font-size: 50%; } }
@@ -109,9 +109,9 @@ body {
   .sidenav .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px; }
+    right: 2.5rem;
+    font-size: 3.6rem;
+    margin-left: 5rem; }
   .sidenav__menu {
     width: 90%;
     margin: 0 auto;
@@ -177,6 +177,10 @@ body {
     padding-top: 15px; }
     .sidenav a {
       font-size: 18px; } }
+
+@media screen and (max-width: 450px) {
+  .sidenav a {
+    font-size: 2rem; } }
 
 .cardss {
   width: 100%;
