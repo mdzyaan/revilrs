@@ -29,7 +29,7 @@ body {
   70% {
     background-position: 100% 50%; }
   100% {
-    background-position: 0% 50%; } }
+    background-position: 0% 100%; } }
 
 @font-face {
   font-family: 'Facon';
@@ -38,18 +38,48 @@ body {
 .nav {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 1rem 2rem;
   z-index: 1000;
   position: fixed;
   top: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5); }
   .nav__hamburger {
-    font-size: 3rem;
-    cursor: pointer;
     display: flex;
-    justify-content: center;
-    flex-direction: column; }
+    align-items: center;
+    vertical-align: middle; }
+    .nav__hamburger-button {
+      cursor: pointer;
+      position: absolute;
+      top: 50%; }
+    .nav__hamburger-icon {
+      position: relative; }
+      .nav__hamburger-icon, .nav__hamburger-icon::before, .nav__hamburger-icon::after {
+        width: 3rem;
+        height: 2px;
+        background-color: #fff;
+        display: inline-block; }
+      .nav__hamburger-icon::before {
+        width: 2rem; }
+      .nav__hamburger-icon::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        transition: all .2s; }
+      .nav__hamburger-icon::after {
+        width: 2rem;
+        right: 0;
+        content: '';
+        position: absolute;
+        transition: all .2s; }
+      .nav__hamburger-icon::before {
+        top: -1rem; }
+      .nav__hamburger-icon::after {
+        top: 1rem; }
+    .nav__hamburger-button:hover .nav__hamburger-icon::before {
+      width: 3rem; }
+    .nav__hamburger-button:hover .nav__hamburger-icon::after {
+      width: 3rem; }
   .nav__logo {
     display: flex;
     justify-content: center;
@@ -179,15 +209,51 @@ body {
   .sidenav a {
     font-size: 2rem; } }
 
+.nav__hamburger {
+  display: flex;
+  align-items: center;
+  vertical-align: middle; }
+  .nav__hamburger-button {
+    cursor: pointer;
+    position: absolute;
+    top: 50%; }
+  .nav__hamburger-icon {
+    position: relative; }
+    .nav__hamburger-icon, .nav__hamburger-icon::before, .nav__hamburger-icon::after {
+      width: 3rem;
+      height: 2px;
+      background-color: #fff;
+      display: inline-block; }
+    .nav__hamburger-icon::before {
+      width: 2rem; }
+    .nav__hamburger-icon::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      transition: all .2s; }
+    .nav__hamburger-icon::after {
+      width: 2rem;
+      right: 0;
+      content: '';
+      position: absolute;
+      transition: all .2s; }
+    .nav__hamburger-icon::before {
+      top: -1rem; }
+    .nav__hamburger-icon::after {
+      top: 1rem; }
+  .nav__hamburger-button:hover .nav__hamburger-icon::before {
+    width: 3rem; }
+  .nav__hamburger-button:hover .nav__hamburger-icon::after {
+    width: 3rem; }
+
 .cardss {
   width: 100%;
-  margin: 10rem 0; }
+  margin: 5rem 0; }
   .cardss__title {
     margin: 0 auto;
     margin-bottom: 2rem; }
     .cardss__title-head {
       text-align: center;
-      letter-spacing: .5rem;
       margin-bottom: 1rem; }
     .cardss__title-line {
       margin: 0 auto;
@@ -316,7 +382,8 @@ body {
   background-color: transparent;
   display: block;
   transition: all .3s;
-  z-index: 100; }
+  z-index: 100;
+  text-decoration: none; }
   .button__wrapper-btn:hover {
     opacity: 0.8;
     transform: scale(1.1); }
@@ -397,7 +464,6 @@ body {
   padding: 3rem;
   z-index: 1500; }
   .search__input-form {
-    text-align: center;
     background-color: #242424;
     color: #fff;
     font-size: 4rem;
@@ -430,3 +496,125 @@ body {
   .footer__icon {
     color: red;
     margin: 1rem 0; }
+
+.detail {
+  margin: 10rem 2rem; }
+  .detail__head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem; }
+    .detail__head-right-rating {
+      font-weight: bold; }
+    .detail__head-right-icon1 {
+      color: #fff; }
+  .detail__summary {
+    opacity: 0.5;
+    text-align: justify; }
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column; }
+  .wrapper__content {
+    background: rgba(36, 36, 36, 0.5);
+    padding: 3rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column; }
+    .wrapper__content-logo {
+      margin: 0 auto;
+      display: flex;
+      padding: 1rem 2rem 0.4rem;
+      border-radius: 1rem;
+      background: linear-gradient(270deg, #ea5455, #f8d800, #28c76f, #0396ff);
+      background-size: 800% 800%;
+      animation: colorChange 30s linear infinite;
+      transform: skewX(-15deg); }
+      .wrapper__content-logo-text {
+        font-family: 'Facon', sans-serif;
+        font-size: 3.2rem;
+        color: #fff;
+        text-decoration: none;
+        transform: skewX(7deg); }
+    .wrapper__content-title {
+      font-weight: 300;
+      font-size: 3.2rem;
+      text-align: center;
+      margin: 2rem 0 0 0;
+      color: #eee; }
+    .wrapper__content-para {
+      font-size: 1.4rem;
+      opacity: 0.5;
+      text-align: center;
+      margin-bottom: 2rem; }
+    .wrapper__content-line {
+      margin: 0 auto 1rem;
+      display: block;
+      width: 50%;
+      height: .3rem;
+      border-radius: .2rem;
+      background: linear-gradient(270deg, #ea5455, #f8d800, #28c76f, #0396ff);
+      background-size: 800% 800%;
+      animation: colorChange 30s linear infinite; }
+
+.button {
+  display: flex;
+  align-items: center;
+  min-width: 20.5rem;
+  margin: 1.2rem auto 0 auto;
+  height: 4.2rem;
+  border-width: 0;
+  border-radius: 5px;
+  white-space: nowrap;
+  transition-property: background-color, box-shadow;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  padding: 0;
+  background: white;
+  color: #737373; }
+  .button__icon {
+    float: left;
+    vertical-align: middle;
+    margin: 0.8rem 0 0.8rem 0.8rem;
+    width: 2.6rem;
+    height: 2.6rem;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 2rem; }
+    .button__icon-svg {
+      height: 32px;
+      margin-left: 1px;
+      margin-top: -1px; }
+  .button__text {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 0.8rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: 'Roboto',arial,sans-serif; }
+
+.google-btn:focus, .google-btn:hover {
+  color: #fff;
+  background-color: #4285f4; }
+
+.google-btn:active {
+  background-color: #e5e5e5;
+  box-shadow: none;
+  transition-duration: 10ms; }
+
+.google-btn-icon {
+  padding: 0.4rem; }
+
+.fb-btn:focus, .fb-btn:hover {
+  color: #fff;
+  background-color: #3C5896; }
+
+.fb-btn:active {
+  background-color: #e5e5e5;
+  box-shadow: none;
+  transition-duration: 10ms; }
+
+.fb-btn-icon svg {
+  height: 3.2rem; }

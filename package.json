@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "8.13.3"
+  },
   "scripts": {
     "compile": "node-sass sass/main.scss css/styles.css -w"
   },
@@ -10,6 +13,6 @@
   "license": "ISC",
   "devDependencies": {
     "live-server": "^1.2.0",
-    "node-sass": "^4.9.3"
+    "node-sass": "^4.9.4"
   }
 }

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#000000">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.3.1/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">        
     <title>revilr</title>
@@ -52,13 +52,18 @@
       <div class="sidenav__line"></div>
     </div>
     <nav class="nav">
-      <div class="nav__hamburger" onclick="openNav()">&#9776</div>
+      <!-- <div class="nav__hamburger" onclick="openNav()">&#9776</div> -->
+      <div class="nav__hamburger" onclick="openNav()">
+        <div class="nav__hamburger-button">
+            <span class="nav__hamburger-icon">&nbsp;</span>
+        </div> 
+      </div>
       <div class="nav__logo">
         <a href="index.html" class="nav__logo-text">Revilr</a>
       </div>
       <div class="nav__search">
         <a href="search.html">
-          <i class="nav__search-icon fas fa-search"></i>
+          <i class="nav__search-icon fal fa-search"></i>
         </a>
       </div>
     </nav>
@@ -67,7 +72,7 @@
       <div class="header__content">
         <div class="header__content-title">Watch the trailer of most anticipated mobile game of 2018.</div>
         <div class="header__content-cta button__wrapper">
-          <a class="header__content-cta-button button__wrapper-btn">Watch Trailer Now.</a>
+          <a href="detail.html" class="header__content-cta-button button__wrapper-btn">Watch Trailer Now.</a>
           <div class="header__content-cta-line button__wrapper-line"></div>
         </div>
       </div>
@@ -83,10 +88,10 @@
         <div class="cardss__post-card cards">
           <img src="//images.igdb.com/igdb/image/upload/t_cover_big/lcy8csmxbak1hnx9kwqg.jpg"/>
           <div class="cards__bg"></div>
-          <a class="cards__icon-1" href="#">
+          <a class="cards__icon-1" href="detail.html">
               <i class="cards__icon-11 far fa-play-circle"></i>
           </a>
-          <button class="cards__icon-2" href="#">
+          <button class="cards__icon-2" href="detail.html">
               <i class="cards__icon-22 fas fa-plus"></i>
           </button>
           <span class="cards__icon-3">
