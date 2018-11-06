@@ -56,7 +56,7 @@ body {
       position: relative; }
       .nav__hamburger-icon, .nav__hamburger-icon::before, .nav__hamburger-icon::after {
         width: 3rem;
-        height: 2px;
+        height: 1px;
         background-color: #fff;
         display: inline-block; }
       .nav__hamburger-icon::before {
@@ -84,7 +84,10 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 1rem 2rem 0.4rem;
+    align-items: center;
+    height: 5rem;
+    width: 16rem;
+    padding: 1rem 0 0.4rem;
     border-radius: 1rem;
     background: linear-gradient(270deg, #ea5455, #f8d800, #28c76f, #0396ff);
     background-size: 800% 800%;
@@ -105,146 +108,101 @@ body {
       color: #fff;
       font-size: 2rem; }
 
-.sidenav {
-  height: 100%;
-  width: 0;
+#sidebar {
+  width: 250px;
+  min-width: 250px;
+  max-width: 250px;
+  height: 100vh;
   position: fixed;
-  z-index: 1500;
   top: 0;
   left: 0;
-  background-color: #000;
-  overflow-x: hidden;
-  transition: all 0.5s;
-  padding-top: 6rem; }
-  .sidenav a:hover {
-    opacity: 1; }
-  .sidenav__line {
-    margin: 1rem auto;
-    width: 25%;
-    height: 2px;
+  background: #000;
+  color: #fff;
+  transition: all 0.3s;
+  margin-left: -250px;
+  /* top layer */
+  z-index: 9999; }
+  #sidebar.active {
+    margin-left: 0; }
+  #sidebar .sidebar-header {
+    padding: 20px;
+    background: #000;
+    position: relative; }
+  #sidebar ul p {
+    color: #fff;
+    padding: 10px; }
+  #sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
     display: block;
-    background: linear-gradient(270deg, #ea5455, #f8d800, #28c76f, #0396ff);
-    background-size: 800% 800%;
-    animation: colorChange 30s ease infinite; }
-  .sidenav::-webkit-scrollbar {
-    width: 0.5rem; }
-  .sidenav::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
-  .sidenav::-webkit-scrollbar-thumb {
-    background-color: #636161;
-    outline: 1px solid slategrey; }
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 2.5rem;
-    font-size: 3.6rem;
-    margin-left: 5rem; }
-  .sidenav__menu {
-    width: 90%;
-    margin: 0 auto;
-    padding: 0 .8rem 0 3.2rem;
-    list-style: none;
-    font-size: 1.6rem; }
-    .sidenav__menu-item {
-      font-weight: bold;
-      opacity: .5;
-      margin-bottom: 1rem;
-      transition: all .3s; }
-      .sidenav__menu-item:hover {
-        opacity: 1;
-        transform: translateX(1rem); }
-  .sidenav__quick {
-    width: 90%;
-    margin: 0 auto;
-    padding: 0 0.8rem 0 3.2rem;
-    list-style: none;
-    font-size: 1.6rem; }
-    .sidenav__quick-title {
-      color: #fff;
-      padding: .5rem;
-      font-size: 1.6rem;
-      text-transform: uppercase;
-      letter-spacing: .3rem; }
-    .sidenav__quick-item {
-      opacity: .5;
-      padding: .5rem;
-      transition: all .3s; }
-      .sidenav__quick-item:hover {
-        opacity: 1;
-        transform: translateX(1rem); }
-  .sidenav__genre {
-    width: 90%;
-    margin: 0 auto;
-    padding: 0 0.8rem 0 3.2rem;
-    list-style: none; }
-    .sidenav__genre-title {
-      color: #fff;
-      padding: .5rem;
-      font-size: 1.6rem;
-      text-transform: uppercase;
-      letter-spacing: .3rem; }
-    .sidenav__genre-item {
-      opacity: .5;
-      padding: .5rem;
-      transition: all .3s; }
-      .sidenav__genre-item:hover {
-        opacity: 1;
-        transform: translateX(1rem); }
-  .sidenav a {
+    color: inherit;
     text-decoration: none;
-    font-size: 1.6rem;
-    color: white;
+    transition: all 0.3s; }
+    #sidebar ul li a:hover {
+      background: rgba(255, 255, 255, 0.1); }
+  #sidebar ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+    transition: all 0.3s;
+    color: inherit; }
+    #sidebar ul ul a:hover {
+      transform: translateX(1rem) scale(1.1); }
+
+.overlay {
+  display: none;
+  position: fixed;
+  /* full screen */
+  width: 100vw;
+  height: 100vh;
+  /* transparent black */
+  background: rgba(0, 0, 0, 0.7);
+  /* middle layer, i.e. appears below the sidebar */
+  z-index: 5000;
+  opacity: 0;
+  /* animate the transition */
+  transition: all 0.5s ease-in-out; }
+  .overlay.active {
     display: block;
-    transition: 0.3s; }
+    opacity: 1; }
+
+#dismiss {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px; }
+
+.line {
+  margin: 1rem auto;
+  width: 25%;
+  height: 2px;
+  display: block;
+  background: linear-gradient(270deg, #ea5455, #f8d800, #28c76f, #0396ff);
+  background-size: 800% 800%;
+  animation: colorChange 30s linear infinite; }
+
+a[data-toggle="collapse"] {
+  position: relative; }
+
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%); }
 
 @media screen and (max-height: 450px) {
   .nav {
-    position: relative; }
-  .sidenav {
-    padding-top: 1.5rem; }
-    .sidenav a {
-      font-size: 2rem; } }
+    position: relative; } }
 
-@media screen and (max-width: 450px) {
-  .sidenav a {
-    font-size: 2rem; } }
-
-.nav__hamburger {
-  display: flex;
-  align-items: center;
-  vertical-align: middle; }
-  .nav__hamburger-button {
-    cursor: pointer;
-    position: absolute;
-    top: 50%; }
-  .nav__hamburger-icon {
-    position: relative; }
-    .nav__hamburger-icon, .nav__hamburger-icon::before, .nav__hamburger-icon::after {
-      width: 3rem;
-      height: 2px;
-      background-color: #fff;
-      display: inline-block; }
-    .nav__hamburger-icon::before {
-      width: 2rem; }
-    .nav__hamburger-icon::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      transition: all .2s; }
-    .nav__hamburger-icon::after {
-      width: 2rem;
-      right: 0;
-      content: '';
-      position: absolute;
-      transition: all .2s; }
-    .nav__hamburger-icon::before {
-      top: -1rem; }
-    .nav__hamburger-icon::after {
-      top: 1rem; }
-  .nav__hamburger-button:hover .nav__hamburger-icon::before {
-    width: 3rem; }
-  .nav__hamburger-button:hover .nav__hamburger-icon::after {
-    width: 3rem; }
+@media (max-width: 450px) {
+  #sidebar .sidebar-header {
+    display: flex;
+    justify-content: center; } }
 
 .cardss {
   width: 100%;
