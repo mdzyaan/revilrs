@@ -10,6 +10,7 @@
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
     <!-- Scrollbar Custom CSS -->
@@ -19,432 +20,426 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 </head>
-
 <body>
 
-        <!-- Sidebar -->
-        <div id="sidebar">
-            
-          <div class="sidebar-header">
-              <div id="dismiss">
-                <i class="fas fa-arrow-left"></i>
-              </div>
-              <div class="nav__logo">
-                  <span href="index.html" class="nav__logo-text">Revilr</span>
-                </div>
+  <!-- Sidebar -->
+  <div id="sidebar">
+      
+    <div class="sidebar-header">
+        <div id="dismiss">
+          <i class="fas fa-arrow-left"></i>
+        </div>
+        <div class="nav__logo">
+            <span href="index.html" class="nav__logo-text">Revilr</span>
           </div>
-  
-          <ul class="list-unstyled components">
-            <p>Logout</p>
-            <div class="line"></div>
+    </div>
 
-            <li >
-              <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
-              <ul class="collapse list-unstyled" id="homeSubmenu">
-                <li>
-                  <a href="#">Home 1</a>
-                </li>
-                <li>
-                  <a href="#">Home 2</a>
-                </li>
-                <li>
-                  <a href="#">Home 3</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-                <a href="#">Recently Watched</a>
-            </li>
-            <li>
-                <a href="#">Favorite</a>
-            </li>
-            <li>
-                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Genre</a>
-                <ul class="collapse list-unstyled" id="pageSubmenu">
-                    <li><a href="#1">Adventure</a></li>
-                    <li><a href="#2">Action</a></li>
-                    <li><a href="#4">Fighting</a></li>
-                    <li><a href="#25">Hack and slash</a></li>
-                    <li><a href="#32">Indie</a></li>
-                    <li><a href="#7">Music</a></li>
-                    <li><a href="#30">Pinball</a></li>
-                    <li><a href="#8">Platform</a></li>
-                    <li><a href="#2">Point-and-click</a></li>
-                    <li><a href="#9">Puzzle</a></li>
-                    <li><a href="#26">Quiz/Trivia</a></li>
-                    <li><a href="#10">Racing</a></li>
-                    <li><a href="#11">Real Time Strategy (RTS)</a></li>
-                    <li><a href="#12">Role-playing (RPG)</a></li>
-                    <li><a href="#5">Shooter</a></li>
-                    <li><a href="#13">Simulator</a></li>
-                    <li><a href="#14">Sport</a></li>
-                    <li><a href="#15">Strategy</a></li>
-                    <li><a href="#24">Tactical</a></li>
-                    <li><a href="#16">Turn-based strategy (TBS)</a></li>
-                </ul>
-            </li>
+    <ul class="list-unstyled components">
+      <p>Logout</p>
+      <div class="line"></div>
+
+      <li >
+        <a href="#">Home</a>
+        <!-- <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+        <ul class="collapse list-unstyled" id="homeSubmenu">
+          <li>
+            <a href="#">Home 1</a>
+          </li>
+          <li>
+            <a href="#">Home 2</a>
+          </li>
+          <li>
+            <a href="#">Home 3</a>
+          </li>
+        </ul> -->
+      </li>
+      <li>
+          <a href="#">Recently Watched</a>
+      </li>
+      <li>
+          <a href="#">Favorite</a>
+      </li>
+      <li>
+          <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Genre</a>
+          <ul class="collapse list-unstyled" id="pageSubmenu">
+              <li><a href="#1">Adventure</a></li>
+              <li><a href="#2">Action</a></li>
+              <li><a href="#4">Fighting</a></li>
+              <li><a href="#25">Hack and slash</a></li>
+              <li><a href="#32">Indie</a></li>
+              <li><a href="#7">Music</a></li>
+              <li><a href="#30">Pinball</a></li>
+              <li><a href="#8">Platform</a></li>
+              <li><a href="#2">Point-and-click</a></li>
+              <li><a href="#9">Puzzle</a></li>
+              <li><a href="#26">Quiz/Trivia</a></li>
+              <li><a href="#10">Racing</a></li>
+              <li><a href="#11">Real Time Strategy (RTS)</a></li>
+              <li><a href="#12">Role-playing (RPG)</a></li>
+              <li><a href="#5">Shooter</a></li>
+              <li><a href="#13">Simulator</a></li>
+              <li><a href="#14">Sport</a></li>
+              <li><a href="#15">Strategy</a></li>
+              <li><a href="#24">Tactical</a></li>
+              <li><a href="#16">Turn-based strategy (TBS)</a></li>
           </ul>
-          <div class="line"></div>
-        </div>
-        <!-- Page Content -->
-        <div id="content">
-          <nav class="nav">
-            <!-- <div class="nav__hamburger" onclick="openNav()">&#9776</div> -->
-            <div type="button" id="sidebarCollapse" class="nav__hamburger">
-            <div class="nav__hamburger-button">
-              <span class="nav__hamburger-icon">&nbsp;</span>
-            </div> 
-            </div>
-            <div class="nav__logo">
-              <a href="index.html" class="nav__logo-text">Revilr</a>
-            </div>
-            <div class="nav__search">
-            <a href="search.html">
-              <i class="nav__search-icon fas fa-search"></i>
-            </a>
-            </div>
-          </nav>
-        </div>
-        <div class="overlay"></div>
-        <section class="header">
-          <div class="header__bg"></div>
-          <div class="header__content">
-            <div class="header__content-title">Watch the trailer of most anticipated mobile game of 2018.</div>
-            <div class="header__content-cta button__wrapper">
-              <a href="detail.html" class="header__content-cta-button button__wrapper-btn">Watch Trailer Now.</a>
-              <div class="header__content-cta-line button__wrapper-line"></div>
-            </div>
-          </div>
-        </section>
-        <section data-aos="fade-in"  data-aos-duration="2000" class="cardss">
-      <div class="cardss__title">
-        <h1 class="cardss__title-head">Featured</h1>
-        <div class="cardss__title-line"></div>
+      </li>
+    </ul>
+    <div class="line"></div>
+  </div>
+  <!-- Page Content -->
+  <nav class="nav">
+    <!-- <div class="nav__hamburger" onclick="openNav()">&#9776</div> -->
+    <div type="button" id="sidebarCollapse" class="nav__hamburger">
+    <div class="nav__hamburger-button">
+      <span class="nav__hamburger-icon">&nbsp;</span>
+    </div> 
+    </div>
+    <div class="nav__logo">
+      <a href="index.html" class="nav__logo-text">Revilr</a>
+    </div>
+    <div class="nav__search">
+    <a href="search.html">
+      <i class="nav__search-icon fas fa-search"></i>
+    </a>
+    </div>
+  </nav>
+  <div class="overlay"></div>
+  <section class="header">
+    <div class="header__bg"></div>
+    <div class="header__content">
+      <div class="header__content-title">Watch the trailer of most anticipated mobile game of 2018.</div>
+      <div class="header__content-cta button__wrapper">
+        <a href="detail.html" class="header__content-cta-button button__wrapper-btn">Watch Trailer Now.</a>
+        <div class="header__content-cta-line button__wrapper-line"></div>
       </div>
-      <div class="cardss__post" >
-        <div class="cardss__post-card cards">
-          <img src="//images.igdb.com/igdb/image/upload/t_cover_big/lcy8csmxbak1hnx9kwqg.jpg"/>
-          <div class="cards__bg"></div>
-          <a class="cards__icon-1" href="detail.html">
-              <i class="cards__icon-11 far fa-play-circle"></i>
-          </a>
-          <button class="cards__icon-2" href="detail.html">
-              <i class="cards__icon-22 fas fa-plus"></i>
-          </button>
-          <span class="cards__icon-3">
-            99<i class="cards__icon-33 fas fa-heartbeat fa-fw"></i>
-          </span>
-        </div>
-        <div class="cards cardss__post-card">
-          <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/vkdea0wwyn0zx8fjs1kt.jpg"/>
-          <div class="cards__bg"></div>
-          <a class="cards__icon-1" href="#">
-              <i class="cards__icon-11 far fa-play-circle"></i>
-          </a>
-          <button class="cards__icon-2" href="#">
-              <i class="cards__icon-22 fas fa-plus"></i>
-          </button>
-          <span class="cards__icon-3">
-            99<i class="cards__icon-33 fas fa-heartbeat fa-fw"></i>
-          </span>
-        </div>
-        <div class="cards cardss__post-card">
-          <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/lvoic2oakbklg2dytgpa.jpg"/>
-          <div class="cards__bg"></div>
-          <a class="cards__icon-1" href="#">
-              <i class="cards__icon-11 far fa-play-circle"></i>
-          </a>
-          <button class="cards__icon-2" href="#">
-              <i class="cards__icon-22 fas fa-plus"></i>
-          </button>
-          <span class="cards__icon-3">
-            99<i class="cards__icon-33 fas fa-heartbeat fa-fw"></i>
-          </span>
-        </div>
-        <div class="cards cardss__post-card">
-          <img src="//images.igdb.com/igdb/image/upload/t_cover_big/lcy8csmxbak1hnx9kwqg.jpg"/>
-          <div class="cards__bg"></div>
-          <a class="cards__icon-1" href="#">
-              <i class="cards__icon-11 far fa-play-circle"></i>
-          </a>
-          <button class="cards__icon-2" href="#">
-              <i class="cards__icon-22 fas fa-plus"></i>
-          </button>
-          <span class="cards__icon-3">
-            99<i class="cards__icon-33 fas fa-heartbeat fa-fw"></i>
-          </span>
-        </div>
-        <div class="cards cardss__post-card">
-          <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/vkdea0wwyn0zx8fjs1kt.jpg"/>
-          <div class="cards__bg"></div>
-          <a class="cards__icon-1" href="#">
-              <i class="cards__icon-11 far fa-play-circle"></i>
-          </a>
-          <button class="cards__icon-2" href="#">
-              <i class="cards__icon-22 fas fa-plus"></i>
-          </button>
-          <span class="cards__icon-3">
-            99<i class="cards__icon-33 fas fa-heartbeat fa-fw"></i>
-          </span>
-        </div>
-        <div class="cards cardss__post-card">
-          <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/lvoic2oakbklg2dytgpa.jpg"/>
-          <div class="cards__bg"></div>
-          <a class="cards__icon-1" href="#">
-              <i class="cards__icon-11 far fa-play-circle"></i>
-          </a>
-          <button class="cards__icon-2" href="#">
-              <i class="cards__icon-22 fas fa-plus"></i>
-          </button>
-          <span class="cards__icon-3">
-            99<i class="cards__icon-33 fas fa-heartbeat fa-fw"></i>
-          </span>
-        </div>
-        <div class="cards cardss__post-card">
-          <img src="//images.igdb.com/igdb/image/upload/t_cover_big/lcy8csmxbak1hnx9kwqg.jpg"/>
-          <div class="cards__bg"></div>
-          <a class="cards__icon-1" href="#">
-              <i class="cards__icon-11 far fa-play-circle"></i>
-          </a>
-          <button class="cards__icon-2" href="#">
-              <i class="cards__icon-22 fas fa-plus"></i>
-          </button>
-          <span class="cards__icon-3">
-            99<i class="cards__icon-33 fas fa-heartbeat fa-fw"></i>
-          </span>
-        </div>
-        <div class="cards cardss__post-card">
-          <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/vkdea0wwyn0zx8fjs1kt.jpg"/>
-          <div class="cards__bg"></div>
-          <a class="cards__icon-1" href="#">
-              <i class="cards__icon-11 far fa-play-circle"></i>
-          </a>
-          <button class="cards__icon-2" href="#">
-              <i class="cards__icon-22 fas fa-plus"></i>
-          </button>
-          <span class="cards__icon-3">
-            99<i class="cards__icon-33 fas fa-heartbeat fa-fw"></i>
-          </span>
-        </div>
-        <div class="cards cardss__post-card">
-          <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/lvoic2oakbklg2dytgpa.jpg"/>
-          <div class="cards__bg"></div>
-          <a class="cards__icon-1" href="#">
-              <i class="cards__icon-11 far fa-play-circle"></i>
-          </a>
-          <button class="cards__icon-2" href="#">
-              <i class="cards__icon-22 fas fa-plus"></i>
-          </button>
-          <span class="cards__icon-3">
-            99<i class="cards__icon-33 fas fa-heartbeat fa-fw"></i>
-          </span>
-        </div>
-      
-      </div>
-      <div class="cardss__button button__wrapper">
-        <button class="cardss__button-button button__wrapper-btn">
-          View All
+    </div>
+  </section>
+  <section data-aos="fade-in"  data-aos-duration="2000" class="cardss">
+    <div class="cardss__title">
+      <h1 class="cardss__title-head">Featured</h1>
+      <div class="cardss__title-line"></div>
+    </div>
+    <div class="cardss__post" >
+      <div class="cardss__post-card cards">
+        <img src="//images.igdb.com/igdb/image/upload/t_cover_big/lcy8csmxbak1hnx9kwqg.jpg"/>
+        <div class="cards__bg"></div>
+        <a class="cards__icon-1" href="detail.html">
+            <i class="cards__icon-11 far fa-play-circle"></i>
+        </a>
+        <button class="cards__icon-2" href="detail.html">
+            <i class="cards__icon-22 fas fa-plus"></i>
         </button>
-        <div class="cardss__button-line button__wrapper-line"></div>
+        <span class="cards__icon-3">
+          99<i class="cards__icon-33 fas fa-heartbeat fa-fw"></i>
+        </span>
       </div>
-      
-    </section> 
-    <!-- Top games -->
-    <section data-aos="fade-in"  data-aos-duration="2000" class="cardss">
-      <div class="cardss__title">
-        <h1 class="cardss__title-head">Top Games</h1>
-        <div class="cardss__title-line"></div>
-      </div>
-      <div class="cardss__post">
-        <div class="cardss__post-card cards">
-          <img src="//images.igdb.com/igdb/image/upload/t_cover_big/lcy8csmxbak1hnx9kwqg.jpg"/>
-          <div class="cards__bg"></div>
-          <a class="cards__icon-1" href="#">
-              <i class="cards__icon-11 far fa-play-circle"></i>
-          </a>
-          <button class="cards__icon-2" href="#">
-              <i class="cards__icon-22 fas fa-plus"></i>
-          </button>
-          <span class="cards__icon-3">
-            99<i class="cards__icon-33 fas fa-heartbeat fa-fw"></i>
-          </span>
-        </div>
-        <div class="cards cardss__post-card">
-          <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/vkdea0wwyn0zx8fjs1kt.jpg"/>
-          <div class="cards__bg"></div>
-          <a class="cards__icon-1" href="#">
-              <i class="cards__icon-11 far fa-play-circle"></i>
-          </a>
-          <button class="cards__icon-2" href="#">
-              <i class="cards__icon-22 fas fa-plus"></i>
-          </button>
-          <span class="cards__icon-3">
-            99<i class="cards__icon-33 fas fa-heartbeat fa-fw"></i>
-          </span>
-        </div>
-        <div class="cards cardss__post-card">
-          <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/lvoic2oakbklg2dytgpa.jpg"/>
-          <div class="cards__bg"></div>
-          <a class="cards__icon-1" href="#">
-              <i class="cards__icon-11 far fa-play-circle"></i>
-          </a>
-          <button class="cards__icon-2" href="#">
-              <i class="cards__icon-22 fas fa-plus"></i>
-          </button>
-          <span class="cards__icon-3">
-            99<i class="cards__icon-33 fas fa-heartbeat fa-fw"></i>
-          </span>
-        </div>
-        <div class="cards cardss__post-card">
-          <img src="//images.igdb.com/igdb/image/upload/t_cover_big/lcy8csmxbak1hnx9kwqg.jpg"/>
-          <div class="cards__bg"></div>
-          <a class="cards__icon-1" href="#">
-              <i class="cards__icon-11 far fa-play-circle"></i>
-          </a>
-          <button class="cards__icon-2" href="#">
-              <i class="cards__icon-22 fas fa-plus"></i>
-          </button>
-          <span class="cards__icon-3">
-            99<i class="cards__icon-33 fas fa-heartbeat fa-fw"></i>
-          </span>
-        </div>
-        <div class="cards cardss__post-card">
-          <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/vkdea0wwyn0zx8fjs1kt.jpg"/>
-          <div class="cards__bg"></div>
-          <a class="cards__icon-1" href="#">
-              <i class="cards__icon-11 far fa-play-circle"></i>
-          </a>
-          <button class="cards__icon-2" href="#">
-              <i class="cards__icon-22 fas fa-plus"></i>
-          </button>
-          <span class="cards__icon-3">
-            99<i class="cards__icon-33 fas fa-heartbeat fa-fw"></i>
-          </span>
-        </div>
-        <div class="cards cardss__post-card">
-          <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/lvoic2oakbklg2dytgpa.jpg"/>
-          <div class="cards__bg"></div>
-          <a class="cards__icon-1" href="#">
-              <i class="cards__icon-11 far fa-play-circle"></i>
-          </a>
-          <button class="cards__icon-2" href="#">
-              <i class="cards__icon-22 fas fa-plus"></i>
-          </button>
-          <span class="cards__icon-3">
-            99<i class="cards__icon-33 fas fa-heartbeat fa-fw"></i>
-          </span>
-        </div>
-        <div class="cards cardss__post-card">
-          <img src="//images.igdb.com/igdb/image/upload/t_cover_big/lcy8csmxbak1hnx9kwqg.jpg"/>
-          <div class="cards__bg"></div>
-          <a class="cards__icon-1" href="#">
-              <i class="cards__icon-11 far fa-play-circle"></i>
-          </a>
-          <button class="cards__icon-2" href="#">
-              <i class="cards__icon-22 fas fa-plus"></i>
-          </button>
-          <span class="cards__icon-3">
-            99<i class="cards__icon-33 fas fa-heartbeat fa-fw"></i>
-          </span>
-        </div>
-        <div class="cards cardss__post-card">
-          <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/vkdea0wwyn0zx8fjs1kt.jpg"/>
-          <div class="cards__bg"></div>
-          <a class="cards__icon-1" href="#">
-              <i class="cards__icon-11 far fa-play-circle"></i>
-          </a>
-          <button class="cards__icon-2" href="#">
-              <i class="cards__icon-22 fas fa-plus"></i>
-          </button>
-          <span class="cards__icon-3">
-            99<i class="cards__icon-33 fas fa-heartbeat fa-fw"></i>
-          </span>
-        </div>
-        <div class="cards cardss__post-card">
-          <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/lvoic2oakbklg2dytgpa.jpg"/>
-          <div class="cards__bg"></div>
-          <a class="cards__icon-1" href="#">
-              <i class="cards__icon-11 far fa-play-circle"></i>
-          </a>
-          <button class="cards__icon-2" href="#">
-              <i class="cards__icon-22 fas fa-plus"></i>
-          </button>
-          <span class="cards__icon-3">
-            99<i class="cards__icon-33 fas fa-heartbeat fa-fw"></i>
-          </span>
-        </div>
-      
-      </div>
-      <div class="cardss__button button__wrapper">
-        <button class="cardss__button-button button__wrapper-btn">
-          View All
+      <div class="cards cardss__post-card">
+        <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/vkdea0wwyn0zx8fjs1kt.jpg"/>
+        <div class="cards__bg"></div>
+        <a class="cards__icon-1" href="#">
+            <i class="cards__icon-11 far fa-play-circle"></i>
+        </a>
+        <button class="cards__icon-2" href="#">
+            <i class="cards__icon-22 fas fa-plus"></i>
         </button>
-        <div class="cardss__button-line button__wrapper-line"></div>
+        <span class="cards__icon-3">
+          99<i class="cards__icon-33 fas fa-heartbeat fa-fw"></i>
+        </span>
       </div>
-      
-    </section> 
-    <!-- My list -->
-    <section data-aos="fade-in"  data-aos-duration="2000" class="cardss">
-      <div class="cardss__title">
-        <h1 class="cardss__title-head">Favorite List</h1>
-        <div class="cardss__title-line"></div>
-      </div>
-      <div class="cardss__post" >
-        <div class="cardss__post-null">
-          <div class="cards__post-null-text">Add some favorite games to show here</div>
-        </div>
-      </div>
-      <div class="cardss__button button__wrapper">
-        <button class="cardss__button-button button__wrapper-btn">
-          View All
+      <div class="cards cardss__post-card">
+        <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/lvoic2oakbklg2dytgpa.jpg"/>
+        <div class="cards__bg"></div>
+        <a class="cards__icon-1" href="#">
+            <i class="cards__icon-11 far fa-play-circle"></i>
+        </a>
+        <button class="cards__icon-2" href="#">
+            <i class="cards__icon-22 fas fa-plus"></i>
         </button>
-        <div class="cardss__button-line button__wrapper-line"></div>
+        <span class="cards__icon-3">
+          99<i class="cards__icon-33 fas fa-heartbeat fa-fw"></i>
+        </span>
       </div>
-      
-    </section> 
-    <footer class="footer">
-      &copy; Copyright 2018. Most of the rights reserved.<br>
-      Made with  Code<i class="footer__icon fas fa-heartbeat fa-fw"></i>!!!
-    </footer>
+      <div class="cards cardss__post-card">
+        <img src="//images.igdb.com/igdb/image/upload/t_cover_big/lcy8csmxbak1hnx9kwqg.jpg"/>
+        <div class="cards__bg"></div>
+        <a class="cards__icon-1" href="#">
+            <i class="cards__icon-11 far fa-play-circle"></i>
+        </a>
+        <button class="cards__icon-2" href="#">
+            <i class="cards__icon-22 fas fa-plus"></i>
+        </button>
+        <span class="cards__icon-3">
+          99<i class="cards__icon-33 fas fa-heartbeat fa-fw"></i>
+        </span>
+      </div>
+      <div class="cards cardss__post-card">
+        <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/vkdea0wwyn0zx8fjs1kt.jpg"/>
+        <div class="cards__bg"></div>
+        <a class="cards__icon-1" href="#">
+            <i class="cards__icon-11 far fa-play-circle"></i>
+        </a>
+        <button class="cards__icon-2" href="#">
+            <i class="cards__icon-22 fas fa-plus"></i>
+        </button>
+        <span class="cards__icon-3">
+          99<i class="cards__icon-33 fas fa-heartbeat fa-fw"></i>
+        </span>
+      </div>
+      <div class="cards cardss__post-card">
+        <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/lvoic2oakbklg2dytgpa.jpg"/>
+        <div class="cards__bg"></div>
+        <a class="cards__icon-1" href="#">
+            <i class="cards__icon-11 far fa-play-circle"></i>
+        </a>
+        <button class="cards__icon-2" href="#">
+            <i class="cards__icon-22 fas fa-plus"></i>
+        </button>
+        <span class="cards__icon-3">
+          99<i class="cards__icon-33 fas fa-heartbeat fa-fw"></i>
+        </span>
+      </div>
+      <div class="cards cardss__post-card">
+        <img src="//images.igdb.com/igdb/image/upload/t_cover_big/lcy8csmxbak1hnx9kwqg.jpg"/>
+        <div class="cards__bg"></div>
+        <a class="cards__icon-1" href="#">
+            <i class="cards__icon-11 far fa-play-circle"></i>
+        </a>
+        <button class="cards__icon-2" href="#">
+            <i class="cards__icon-22 fas fa-plus"></i>
+        </button>
+        <span class="cards__icon-3">
+          99<i class="cards__icon-33 fas fa-heartbeat fa-fw"></i>
+        </span>
+      </div>
+      <div class="cards cardss__post-card">
+        <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/vkdea0wwyn0zx8fjs1kt.jpg"/>
+        <div class="cards__bg"></div>
+        <a class="cards__icon-1" href="#">
+            <i class="cards__icon-11 far fa-play-circle"></i>
+        </a>
+        <button class="cards__icon-2" href="#">
+            <i class="cards__icon-22 fas fa-plus"></i>
+        </button>
+        <span class="cards__icon-3">
+          99<i class="cards__icon-33 fas fa-heartbeat fa-fw"></i>
+        </span>
+      </div>
+      <div class="cards cardss__post-card">
+        <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/lvoic2oakbklg2dytgpa.jpg"/>
+        <div class="cards__bg"></div>
+        <a class="cards__icon-1" href="#">
+            <i class="cards__icon-11 far fa-play-circle"></i>
+        </a>
+        <button class="cards__icon-2" href="#">
+            <i class="cards__icon-22 fas fa-plus"></i>
+        </button>
+        <span class="cards__icon-3">
+          99<i class="cards__icon-33 fas fa-heartbeat fa-fw"></i>
+        </span>
+      </div>
+    
+    </div>
+    <div class="cardss__button button__wrapper">
+      <button class="cardss__button-button button__wrapper-btn">
+        View All
+      </button>
+      <div class="cardss__button-line button__wrapper-line"></div>
+    </div>
+    
+  </section> 
+  <!-- Top games -->
+  <section data-aos="fade-in"  data-aos-duration="2000" class="cardss">
+    <div class="cardss__title">
+      <h1 class="cardss__title-head">Top Games</h1>
+      <div class="cardss__title-line"></div>
+    </div>
+    <div class="cardss__post">
+      <div class="cardss__post-card cards">
+        <img src="//images.igdb.com/igdb/image/upload/t_cover_big/lcy8csmxbak1hnx9kwqg.jpg"/>
+        <div class="cards__bg"></div>
+        <a class="cards__icon-1" href="#">
+            <i class="cards__icon-11 far fa-play-circle"></i>
+        </a>
+        <button class="cards__icon-2" href="#">
+            <i class="cards__icon-22 fas fa-plus"></i>
+        </button>
+        <span class="cards__icon-3">
+          99<i class="cards__icon-33 fas fa-heartbeat fa-fw"></i>
+        </span>
+      </div>
+      <div class="cards cardss__post-card">
+        <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/vkdea0wwyn0zx8fjs1kt.jpg"/>
+        <div class="cards__bg"></div>
+        <a class="cards__icon-1" href="#">
+            <i class="cards__icon-11 far fa-play-circle"></i>
+        </a>
+        <button class="cards__icon-2" href="#">
+            <i class="cards__icon-22 fas fa-plus"></i>
+        </button>
+        <span class="cards__icon-3">
+          99<i class="cards__icon-33 fas fa-heartbeat fa-fw"></i>
+        </span>
+      </div>
+      <div class="cards cardss__post-card">
+        <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/lvoic2oakbklg2dytgpa.jpg"/>
+        <div class="cards__bg"></div>
+        <a class="cards__icon-1" href="#">
+            <i class="cards__icon-11 far fa-play-circle"></i>
+        </a>
+        <button class="cards__icon-2" href="#">
+            <i class="cards__icon-22 fas fa-plus"></i>
+        </button>
+        <span class="cards__icon-3">
+          99<i class="cards__icon-33 fas fa-heartbeat fa-fw"></i>
+        </span>
+      </div>
+      <div class="cards cardss__post-card">
+        <img src="//images.igdb.com/igdb/image/upload/t_cover_big/lcy8csmxbak1hnx9kwqg.jpg"/>
+        <div class="cards__bg"></div>
+        <a class="cards__icon-1" href="#">
+            <i class="cards__icon-11 far fa-play-circle"></i>
+        </a>
+        <button class="cards__icon-2" href="#">
+            <i class="cards__icon-22 fas fa-plus"></i>
+        </button>
+        <span class="cards__icon-3">
+          99<i class="cards__icon-33 fas fa-heartbeat fa-fw"></i>
+        </span>
+      </div>
+      <div class="cards cardss__post-card">
+        <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/vkdea0wwyn0zx8fjs1kt.jpg"/>
+        <div class="cards__bg"></div>
+        <a class="cards__icon-1" href="#">
+            <i class="cards__icon-11 far fa-play-circle"></i>
+        </a>
+        <button class="cards__icon-2" href="#">
+            <i class="cards__icon-22 fas fa-plus"></i>
+        </button>
+        <span class="cards__icon-3">
+          99<i class="cards__icon-33 fas fa-heartbeat fa-fw"></i>
+        </span>
+      </div>
+      <div class="cards cardss__post-card">
+        <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/lvoic2oakbklg2dytgpa.jpg"/>
+        <div class="cards__bg"></div>
+        <a class="cards__icon-1" href="#">
+            <i class="cards__icon-11 far fa-play-circle"></i>
+        </a>
+        <button class="cards__icon-2" href="#">
+            <i class="cards__icon-22 fas fa-plus"></i>
+        </button>
+        <span class="cards__icon-3">
+          99<i class="cards__icon-33 fas fa-heartbeat fa-fw"></i>
+        </span>
+      </div>
+      <div class="cards cardss__post-card">
+        <img src="//images.igdb.com/igdb/image/upload/t_cover_big/lcy8csmxbak1hnx9kwqg.jpg"/>
+        <div class="cards__bg"></div>
+        <a class="cards__icon-1" href="#">
+            <i class="cards__icon-11 far fa-play-circle"></i>
+        </a>
+        <button class="cards__icon-2" href="#">
+            <i class="cards__icon-22 fas fa-plus"></i>
+        </button>
+        <span class="cards__icon-3">
+          99<i class="cards__icon-33 fas fa-heartbeat fa-fw"></i>
+        </span>
+      </div>
+      <div class="cards cardss__post-card">
+        <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/vkdea0wwyn0zx8fjs1kt.jpg"/>
+        <div class="cards__bg"></div>
+        <a class="cards__icon-1" href="#">
+            <i class="cards__icon-11 far fa-play-circle"></i>
+        </a>
+        <button class="cards__icon-2" href="#">
+            <i class="cards__icon-22 fas fa-plus"></i>
+        </button>
+        <span class="cards__icon-3">
+          99<i class="cards__icon-33 fas fa-heartbeat fa-fw"></i>
+        </span>
+      </div>
+      <div class="cards cardss__post-card">
+        <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/lvoic2oakbklg2dytgpa.jpg"/>
+        <div class="cards__bg"></div>
+        <a class="cards__icon-1" href="#">
+            <i class="cards__icon-11 far fa-play-circle"></i>
+        </a>
+        <button class="cards__icon-2" href="#">
+            <i class="cards__icon-22 fas fa-plus"></i>
+        </button>
+        <span class="cards__icon-3">
+          99<i class="cards__icon-33 fas fa-heartbeat fa-fw"></i>
+        </span>
+      </div>
+    
+    </div>
+    <div class="cardss__button button__wrapper">
+      <button class="cardss__button-button button__wrapper-btn">
+        View All
+      </button>
+      <div class="cardss__button-line button__wrapper-line"></div>
+    </div>
+    
+  </section> 
+  <!-- My list -->
+  <section data-aos="fade-in"  data-aos-duration="2000" class="cardss">
+    <div class="cardss__title">
+      <h1 class="cardss__title-head">Favorite List</h1>
+      <div class="cardss__title-line"></div>
+    </div>
+    <div class="cardss__post" >
+      <div class="cardss__post-null">
+        <div class="cards__post-null-text">Add some favorite games to show here</div>
+      </div>
+    </div>
+    <div class="cardss__button button__wrapper">
+      <button class="cardss__button-button button__wrapper-btn">
+        View All
+      </button>
+      <div class="cardss__button-line button__wrapper-line"></div>
+    </div>
+    
+  </section> 
+  <footer class="footer">
+    &copy; Copyright 2018. Most of the rights reserved.<br>
+    Made with  Code<i class="footer__icon fas fa-heartbeat fa-fw"></i>!!!
+  </footer>
 
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-   
-
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    <!-- jQuery Custom Scroller CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+  <!-- AOS.js -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- jQuery CDN - Slim version (=without AJAX) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <!-- Popper.JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  jQuery Custom Scroller CDN
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
 
   <script>
     $(document).ready(function () {
-        $("#sidebar").mCustomScrollbar({
-            theme: "minimal"
-        });
+      AOS.init();
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
 
-        $('#dismiss, .overlay').on('click', function () {
-            // hide sidebar
-            $('#sidebar').removeClass('active');
-            // hide overlay
-            $('.overlay').removeClass('active');
-        });
+      $('#dismiss, .overlay').on('click', function () {
+        // hide sidebar
+        $('#sidebar').removeClass('active');
+        // hide overlay
+        $('.overlay').removeClass('active');
+      });
 
-        $('#sidebarCollapse').on('click', function () {
-            // open sidebar
-            $('#sidebar').addClass('active');
-            // fade in the overlay
-            $('.overlay').addClass('active');
-            $('.collapse.in').toggleClass('in');
-            $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-        });
+      $('#sidebarCollapse').on('click', function () {
+        // open sidebar
+        $('#sidebar').addClass('active');
+        // fade in the overlay
+        $('.overlay').addClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
     });
 
   </script>

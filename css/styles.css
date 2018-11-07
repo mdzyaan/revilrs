@@ -12,7 +12,7 @@ html {
       font-size: 45%; } }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.6rem;
   box-sizing: border-box;
   padding: 0;
@@ -202,7 +202,9 @@ a[data-toggle="collapse"] {
 @media (max-width: 450px) {
   #sidebar .sidebar-header {
     display: flex;
-    justify-content: center; } }
+    justify-content: center; }
+  .list-unstyled {
+    font-size: 2rem; } }
 
 .cardss {
   width: 100%;
@@ -450,10 +452,10 @@ a[data-toggle="collapse"] {
 .footer {
   margin: 1rem 0;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  opacity: 0.5; }
   .footer__icon {
-    color: red;
-    margin: 1rem 0; }
+    color: red; }
 
 .detail {
   margin: 10rem 2rem; }
